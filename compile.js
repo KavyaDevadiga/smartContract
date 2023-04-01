@@ -25,7 +25,7 @@ var input = {
   compilesFiles = JSON.parse(solc.compile(JSON.stringify(input))).contracts[
     'inbox.sol'
     ].Inbox
-  console.log(compilesFiles)
+  console.log(compilesFiles.abi)
 
   module.exports = compilesFiles
   
